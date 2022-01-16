@@ -1,19 +1,21 @@
-require('dotenv').config();
-const express = require("express");
-const cors = require('cors');
-const helmet = require("helmet");
-const  mongoose  = require('mongoose');
-const app = express();
-app.use(cors());
-app.use(express.json());
-app.use(helmet());
+require("dotenv").config();
+import express from "express";
+import cors from "cors";
+import helmet from "helmet";
 
-//Set up mongoose
-const mongoDB = process.env.MONGODB_URI;
-mongoose.connect(mongoDB, {userNewUrlParser: true, useUnifiedTopology: true}).then(()=>console.log("CONNECTION ESTABLISHED"));
+//Database Connection
+import ConnectDB from "./database/connection";
+const zomato = express();
+zomato.use(cors());
+zomato.use(express.json());
+zomato.use(helmet());
 
-//http://localhost:5000/
-app.get("/", (req, res) => {
-    return res.json({"WELCOME": `to my Backend Software for the ZOMATO-MASTER`});
-})
-
+zomato.listen(4000, () => {
+  ConnectDB().then(() => {
+      console.log("Server is running !!! ");
+  })
+  .catch((error) => {
+      console.log ("Server is running, but database connection is failed......");
+    //   console.log(error);
+  })
+});
