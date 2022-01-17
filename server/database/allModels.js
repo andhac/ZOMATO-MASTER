@@ -4,7 +4,7 @@ import { MenuModel } from "./menu";
 import { OrderModal } from "./order";
 import { RestaurantModel } from "./restaurant";
 import { ReviewModel } from "./reviews";
-import { UserModal } from "./user";
+import { UserModel } from "./user";
 
 export{
     FoodModel,
@@ -13,5 +13,5 @@ export{
     OrderModal,
     RestaurantModel,
     ReviewModel,
-    UserModal,
+    UserModel,
 };
