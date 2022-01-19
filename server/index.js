@@ -11,21 +11,26 @@ import ConnectDB from "./database/connection";
 import googleAuthConfig from './config/google.config'
 
 //API
-import Auth from "./API/Auth"
-
+import Auth from "./API/Auth";
+import  Restaurant from "./API/Restaurant";
+import Food from "./API/Food";
+import Menu from "./API/Menu";
 
 const zomato = express();
 zomato.use(cors());
 zomato.use(express.json());
 zomato.use(helmet());
 zomato.use(passport.initialize());
-zomato.use(passport.session());
 
 //password config
-googleAuthConfig(passport)
+googleAuthConfig(passport);
+privateRouteConfig(passport);
 
 //Application Routes
 zomato.use("/auth", Auth)
+zomato.use('/restaurant', Restaurant)
+zomato.use('/food', Food)
+zomato.use('/menu', Menu)
 
 zomato.listen(4000, () => {
   ConnectDB().then(() => {
