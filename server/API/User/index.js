@@ -4,7 +4,7 @@ import express from "express";
 //Database Model
 import { UserModel } from "../../database/allModels";
 
-const Router = express.Router;
+const Router = express.Router();
 
 /**
  * Route       /:id
