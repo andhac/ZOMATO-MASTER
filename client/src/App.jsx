@@ -1,14 +1,19 @@
 import "./App.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
-//HOC
+
+// Hoc
 import HomeLayoutHoc from "./HOC/Home.hoc";
-//pages
+
+// Pages
 import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <>
-      <HomeLayoutHoc component={HomePage} path="/" />
+         <HomeLayoutHoc path="/:type" exact component={HomePage} />
+      <HomeLayoutHoc path="/" exact component={HomePage} />
     </>
   );
 }

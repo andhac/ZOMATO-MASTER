@@ -1,24 +1,20 @@
 import React from "react";
-import {Routes, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 
-// layout
-
+// Layout
 import HomeLayout from "../layout/Homepage.layout";
 
-function HomeLayoutHoc({ component: component,path, ...rest }) {
+function HomeLayoutHoc({ component: Component, ...rest }) {
   return (
     <>
-      <Routes>
       <Route
-      {...rest}
-        path={path}
-        element={
+        {...rest}
+        component={(props) => (
           <HomeLayout>
-            <component />
+            <Component {...props} />
           </HomeLayout>
-        }
+        )}
       />
-      </Routes>
     </>
   );
 }

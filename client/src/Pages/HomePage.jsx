@@ -1,7 +1,16 @@
 import React from "react";
+import { useParams } from "react-router";
+import Delivery from "../components/Delivery";
 
 function HomePage() {
-  return <div>HomePage</div>;
+  const { type } = useParams();
+  console.log(type);
+  return (
+    <>
+      <div className="my-5">{type === "delivery" && <Delivery />}</div>
+      Hello
+    </>
+  );
 }
 
 export default HomePage;
