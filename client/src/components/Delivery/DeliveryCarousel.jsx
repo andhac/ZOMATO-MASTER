@@ -10,12 +10,12 @@ function DeliveryCarousel() {
     {
       image:
         "https://b.zmtcdn.com/data/homepage_dish_data/4/76d788a2600b609bb0a08443e03df95b.png",
-      title: "biryani",
+      title: "Biryani",
     },
     {
       image:
-        "https://b.zmtcdn.com/data/dish_photos/cf9/08bf86a8c902df8e6d703e374391ecf9.jpg",
-      title: "Kesari Bath",
+        "https://b.zmtcdn.com/data/pictures/5/3400685/f7cba4eb53968ea0ffcf3eb85d878b28.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*",
+      title: "THAL",
     },
     {
       image:
