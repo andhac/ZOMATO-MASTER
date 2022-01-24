@@ -8,7 +8,6 @@ function HomePage() {
   return (
     <>
       <div className="my-5">{type === "delivery" && <Delivery />}</div>
-      Hello
     </>
   );
 }
