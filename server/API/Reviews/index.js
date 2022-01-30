@@ -11,7 +11,7 @@ const Router = express.Router();
  * Route        /:resid
  * Des          GET all reviews for a particular restaurant
  * Params       resid
- * Access       Public
+ * Access       Private
  * Method       GET
  */
 Router.get("/:resid", async (req, res) => {

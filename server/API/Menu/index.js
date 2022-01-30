@@ -11,7 +11,7 @@ const Router = express.Router();
  * Params      _id
  * Access      Public
  * Method      GET
- */
+ **/
 
 Router.get('/list/:_id', async (req,res) => {
     try {

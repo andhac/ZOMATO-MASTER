@@ -68,3 +68,78 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+[
+    {
+        "amenities": [],
+        "_id": "61f2529a0ae9fe5623990ee3",
+        "name": "Domino's Pizza",
+        "city": "hathras",
+        "address": "61/34, 1st Floor, New Rohtak Road, Karol Bagh",
+        "mapLocation": "28.6581637791,77.1935084090",
+        "cuisine": [
+            "Pizza",
+            "Fast Food",
+            "Deserts",
+            "Beverages"
+        ],
+        "restaurantTimings": "11am - 11pm",
+        "contactNumber": 8864808868,
+        "website": "dominos.com",
+        "popularDishes": [
+            "Farmhouse",
+            "Veg Extravaganza",
+            "Garlic Breadsticks"
+        ],
+        "averageCost": 300,
+        "amenties": [
+            "Parking",
+            "AC",
+            "Rest Room",
+            "Free WIFI"
+        ],
+        "menuImages": "6161a397a8bb5a753a157e5d",
+        "menu": "6166f8b0db8b2b72dd9de1d4",
+        "reviews": [
+            "61619f4fa8bb5a753a157e5c"
+        ],
+        "photos": "6161a397a8bb5a753a157e5d"
+    },
+    {
+        "amenities": [],
+        "_id": "61f25b839231ec08dd74e17f",
+        "restaurants": "61f2529a0ae9fe5623990ee3",
+        "name": "Domino's Pizza",
+        "city": "hathras",
+        "address": "61/34, 1st Floor, New Rohtak Road, Karol Bagh",
+        "mapLocation": "28.6581637791,77.1935084090",
+        "cuisine": [
+            "Pizza",
+            "Fast Food",
+            "Deserts",
+            "Beverages"
+        ],
+        "restaurantTimings": "11am - 11pm",
+        "contactNumber": 8864808868,
+        "website": "dominos.com",
+        "popularDishes": [
+            "Farmhouse",
+            "Veg Extravaganza",
+            "Garlic Breadsticks"
+        ],
+        "averageCost": 300,
+        "amenties": [
+            "Parking",
+            "AC",
+            "Rest Room",
+            "Free WIFI"
+        ],
+        "menuImages": "6161a397a8bb5a753a157e5d",
+        "menu": "6166f8b0db8b2b72dd9de1d4",
+        "reviews": [
+            "61619f4fa8bb5a753a157e5c"
+        ],
+        "photos": "6161a397a8bb5a753a157e5d"
+    }
+]

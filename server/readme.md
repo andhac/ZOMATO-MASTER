@@ -10,3 +10,34 @@
 - Payment (Payment and their details)
 - Reviews (Reviews and their details)
 - Mail (Mail and their details)
+
+
+
+// NOTE: Redux data reference
+restaurant
+    "name": "",
+    "city": "",
+    "address": "",
+    "mapLocation": "",
+    "cuisine": ["", ""],
+    "restaurantTimings": "",
+    "contactNumber": "",
+    "website": "",
+    "popularDishes": ["", ""],
+    "averageCost": 300,
+    "amenties": ["", ""],
+    "menuImages": referencing => Images Collection document,
+    "menu": references => Menu Collection document,
+    "reviews": [" references => Reviews Collection document,", " references => Reviews Collection document,"],
+    "photos":  references => Images Collection document,
+
+Menus 
+menus: [{
+        "name": "Recommended",
+        "items": [
+            references => Items Collection document,
+        ]
+    }],
+    "recommended": [
+        references => Images Collection document,
+    ]
